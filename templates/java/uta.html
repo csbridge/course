@@ -1,0 +1,32 @@
+% rebase('templates/en/template.ptl', title="TAs", taMode=True)
+
+<!-- Header -->
+<div id="pageHeader">
+  <h1>
+    Java UTA Lesson Plans
+  </h1>
+</div>
+<div>
+  Last updated August 2020
+</div>
+<hr/>
+
+<p>
+On this page you will find lesson plans for Undergraduate Teaching Assistants.
+to teach daily discussion sections and run office hour or lab help during student project time.
+</p>
+
+<p>
+Click on the "UTA Notes" link in each activity to view specifics.
+</p>
+
+<div class="row">
+  <div class="col-xs-12">
+  	<h2>Projects</h2>
+    % include('templates/java/programTable.ptl', lang="java", taMode=True)
+  </div>
+  <div class="col-xs-12">
+  	<h2>Bonus Projects</h2>
+    % include('templates/programs/bonusProjectsTable.ptl', lang="java", taMode=True)
+  </div>
+</div>

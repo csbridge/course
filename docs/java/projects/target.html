@@ -1,0 +1,246 @@
+<!--
+	A template used for every page - contains the header, nav bar, a container div, and the footer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+<title>CS Bridge  | Target</title>
+
+<!-- Fonts -->
+<!--<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+
+<!-- Styles -->
+
+<link href="../../plugins/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+
+<!-- Java Script -->
+<script src="../../plugins/jquery.min.js"></script>
+<script src="../../plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<!--<script src="../../karel/ace/ace.js" type="text/javascript"></script>-->
+
+<!-- Moment.js -->
+<script type="text/javascript" src="../../js/moment.min.js"></script>
+<script type="text/javascript" src="../../js/moment-timezone-with-data-10-year-range.min.js"></script>
+<script type="text/javascript" src="../../js/time.js"></script>
+
+<!-- Date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Latex support -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+<!--
+<script src="../karel/js/html/websiteImports.js"></script>
+<script>importCss();</script>
+<script>importJs();</script>
+-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<!--<script src="sweetalert2.all.min.js"></script>-->
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+-->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+	</head>
+	<body>
+
+
+<!-- The datetime editor, for testing -->
+
+<!-- The navigation bar -->
+<nav class="navbar-inverse navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">CS Bridge</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<!-- Python dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../../python/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2020">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://online.csbridge.org/"> CS Bridge 2020 online website</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://docs.google.com/document/d/1BVncLFZ--q5Aie-j-BmRb52OkEv-5bO8ZNKcN7JYnQE/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../../python/uta.html">UTA section leading lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Java dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../../java/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2019ctu">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://ctu.csbridge.org/"> CTU-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://koc.csbridge.org/"> Koç-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://uniandes.csbridge.org/"> Uniandes-CS Bridge 2019 website</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://docs.google.com/document/d/187dYuw3FITp6i4mDeZ8krp1ap4sNM9uHxjF-3SHlE5U/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../../java/uta.html">UTA lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Logistics dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+            <li><a target="_blank" href="https://docs.google.com/document/d/1z-uYgwpd3G-gYCeGAPw0Hx6lOShgCKwsh6HZttoflAk/edit?usp=sharing">A day in CS Bridge</a></li>
+            <li><a href="">(coming soon!) Planning summer program (coming soon!)</li>
+            <li><a href="">(coming soon!) UTA hiring/training (coming soon!)</a></li>
+            <li class="divider">
+            <li><a href="">(coming soon!) Instructor FAQ</a></li>
+            <li><a href="../../logistics/uta-faq.html">UTA FAQ</a></li>
+            </ul>
+          </li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- Script to toggle between languages -->
+<script>
+	function changeToTurkish() {
+		var url = window.location.href;
+		url = url.replace("/en/", "/tr/");
+		window.location.href = url;
+	}
+	
+	function changeToEnglish() {
+		var url = window.location.href;
+		url = url.replace("/tr/", "/en/");
+		window.location.href = url;
+	}
+</script>
+
+		<div class="container">
+			
+	<!-- Main Content -->
+	<div class="container">
+
+		<!-- Header -->
+		<div id="pageHeader">
+			<h1>
+				Target
+			</h1>
+			<p>
+				Written by Eric Roberts and Mehran Sahami
+			</p>
+			<p>
+				Handouts:
+				<a href ="../../en/handouts/graphics.html">Graphics Reference</a>
+        <br/>
+				Examples:
+				<a href ="../../en/projects/drawPeople.html">Draw People</a>
+        <br/>
+        Day4: <code>Target.java</code>
+			</p>
+
+		</div>
+		<hr/>
+
+		<div class="row">
+			<div class="col-md-12">
+				<p>
+					Suppose that you've been hired to produce a program that draws an image of an archery target that looks like this:
+				</p>
+				<p>
+					<center>
+						<img style="width:500px" src="../../img/projects/target/target.png">	
+					</center>
+				</p>
+				<p>
+					This figure is simply three GOval objects, two red and one white, drawn in the correct order. The outer circle should have a radius of 150 pixels, the white circle has a radius of 100 pixels, and the inner red circle has a radius of 50 pixels. The figure should be centered in the window.
+				</p>
+
+				<p>
+					Bonus: If you get your target working perfectly in the center, try to animate your target. See if you can make it work like the bouncing ball example we went through in class. This is difficult and will require some problem solving - try different strategies out and see what works!
+				</p>
+
+			</div>
+
+		</div>
+
+					
+
+<hr>
+
+<div class="footer">
+	<p class="pull-left">
+
+		<!-- Start of content that must be translated -->
+			&#169; Stanford 2020 &#124; Created by 
+			<a href="http://stanford.edu/~cpiech">Chris</a> with help from the entire team.
+			Based on the wonderful CS106A class which was developed by many talented teachers. Special thanks to <a href="http://cs.stanford.edu/people/eroberts/">Eric Roberts</a> and <a href="http://robotics.stanford.edu/~sahami/bio.html">Mehran Sahami</a>.
+		<!-- End of content that must be translated -->
+	</p>
+</div>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35433298-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript">
+    var pubnubDemo = new PubNub({
+        subscribeKey: 'sub-c-f79c3cd0-a4b5-11e9-aaf3-de35c74afaf8'
+    });
+
+	// Subscribe to the demo_tutorial channel
+	pubnubDemo.addListener({
+	    message: function(request) {
+	    	let msg = request['message']
+	    	console.log(msg)
+	    	let swalData = msg['swal'];
+	    	console.log(swalData)
+        Swal.fire(swalData)
+	    }
+	})
+
+	pubnubDemo.subscribe({
+	    channels: ['csbridge_alert']
+	});
+</script>
+		</div>
+
+	</body>
+</html>

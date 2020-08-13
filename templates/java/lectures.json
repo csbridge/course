@@ -1,0 +1,64 @@
+[
+	{
+		"title_en": "Day 1 Morning: Welcome + Karel",
+		"slidesURL": "slides/Welcome.pptx",
+		"visible_after": "2020080409"
+	},
+	{
+		"title_en": "Day 1 Afternoon: Control Flow",
+		"slidesURL": "slides/ControlFlow.pptx",
+		"visible_after": "2020080500"
+	},
+	{
+		"title_en": "Day 2 Morning: Variables",
+		"slidesURL": "slides/Variables.pptx",
+		"visible_after": "2020080600"
+	},
+	{
+		"title_en": "Day 2 Afternoon: Variables 2",
+		"slidesURL": "slides/Variables2.pptx",
+		"visible_after": "2020080600"
+	},
+	{
+		"title_en": "Day 3 Morning: Graphics",
+		"slidesURL": "slides/Graphics.pptx",
+		"codeURL": "starter/Graphics.zip",
+		"visible_after": "2020080600"
+	},
+	{
+		"title_en": "Day 3 Afternoon: Animation",
+		"slidesURL": "slides/Animation.pptx",
+		"visible_after": "2020080600"
+	},
+	{
+		"title_en": "Day 4 Morning: Methods",
+		"slidesURL": "slides/Methods.pptx",
+		"visible_after": "2020081009"
+	},
+	{
+		"title_en": "Day 4 Afternoon: Nested Loops",
+		"slidesURL": "slides/NestedLoops.pptx",
+		"visible_after": "2020081009"
+	},
+	{
+		"title_en": "Day 5 Morning: Events",
+		"slidesURL": "slides/Events.pptx",
+		"codeURL": "starter/Events.zip",
+		"visible_after": "2020081009"
+	},
+	{
+		"title_en": "Day 5 Afternoon: Breakout",
+		"slidesURL": "slides/Breakout.pptx",
+		"visible_after": "2020081009"
+	},
+	{
+		"title_en": "Day 7 Morning: ArrayLists",
+		"slidesURL": "slides/ArrayLists.pptx",
+		"visible_after": "2020081009"
+	},
+	{
+		"title_en": "Day 7 Afternoon: Hash Maps",
+		"slidesURL": "slides/Hash Maps.pptx",
+		"visible_after": "2020081009"
+	}
+]

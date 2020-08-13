@@ -1,0 +1,38 @@
+% rebase('templates/en/template.ptl', title="TAs", taMode=True)
+
+<!-- Header -->
+<div id="pageHeader">
+  <h1>
+    Python UTA Lesson Plans
+  </h1>
+</div>
+<div>
+  Last updated August 2020
+</div>
+<hr/>
+
+<p>
+On this page you will find lesson plans for Undergraduate Teaching Assistants.
+to teach daily discussion sections and run office hour or lab help during student project time.
+</p>
+<ul>
+  <li>Quickstart, Projects: Guidelines for milestones and debugging techniques to help students during student project time.</li>
+  <li>Section: Detailed notes on how to time, outline, and structure daily discussion sections led by UTAs.</li>
+</ul>
+
+  <p>
+  Click on the "UTA Notes" link in each activity to view specifics.
+  </p>
+
+<hr/>
+
+<div class="row">
+  <div class="col-xs-12">
+  	<h2>Projects</h2>
+    % include('templates/programs/projectsTable.ptl', lang="python", taMode=True)
+  </div>
+  <div class="col-xs-12">
+  	<h2>Bonus Projects</h2>
+    % include('templates/programs/bonusProjectsTable.ptl', lang="python", taMode=True)
+  </div>
+</div>

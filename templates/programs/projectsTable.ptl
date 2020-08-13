@@ -1,0 +1,74 @@
+<%
+"""
+This template renders a table of projects based on the programs.json file.
+See the README for an in-depth description of the expected format of that file.
+
+This template expects one provided parameter, "lang", which should be the language
+code to display the content in.  Currently "en" (English) and "tr" (Turkish) are supported.
+"""
+%>
+
+<%
+	# Read the data from the JSON file
+	import json
+	with open("templates/{}/programs.json".format(lang), "r", encoding="utf8") as programs_file:
+  		data = json.load(programs_file)
+%>
+
+<table class="table table-striped table-sm">
+
+	% # Display the days in correct order (day 1 at the top, day 2 below it, etc.)
+  % for i in range(len(data)):
+		% day_info = data[i]
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day {{i + 1}}: {{day_info["title_en"]}}</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+		% # Below that, show lists for each of the sections of the day
+		% for section in day_info["sections"]:
+			% if "projects" in section:
+				% visible_after = None
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<% 
+	      						project_translation = "Project"
+
+	      						link_translation = "here"
+
+	      					%>
+	      					<h4>{{section["title_en"] + " " + project_translation}} [<a href="{{pathToRoot}}{{lang}}/{{section['projectURL']}}">{{link_translation}}</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      			% if not get('taMode', False) and visible_after:
+						class="visible-after" data-visible-after="{{visible_after}}"
+					% end
+	      		>
+		      		% for project in section["projects"]:
+		      			<tr>
+		      				% include("templates/programs/projectRow.ptl", project=project)
+		      			</tr>
+		      		% end
+		      	</tbody>
+			% end
+		% end
+
+	% end
+
+</table>

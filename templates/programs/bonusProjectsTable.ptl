@@ -1,0 +1,57 @@
+<%
+"""
+This template renders a table of bonus projects based on the bonusPrograms.json file.
+See the README for an in-depth description of the expected format of that file.
+
+This template expects one provided parameter, "lang", which should be the language
+code to display the content in.  Currently "en" (English) and "tr" (Turkish) are supported.
+"""
+%>
+
+<%
+	# Read the data from the JSON file
+	import json
+	with open("templates/programs/bonusPrograms.json", "r", encoding="utf8") as programs_file:
+  		data = json.load(programs_file)
+%>
+
+	% # Iterate in reverse order (so earlier topics are at the bottom)
+  % for i in range(len(data)):
+		% topic_info = data[i]
+
+		<!-- The head of the table should show the topic title and starter code link -->
+    <div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="collapseListGroupHeading{{i}}">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup{{i}}" aria-expanded="false" aria-controls="collapseListGroup{{i}}">
+					<b>{{topic_info["title_en"]}}</b>
+      </div>
+      <div id="collapseListGroup{{i}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading{{i}}">
+					<% 
+						project_translation = "Project"
+
+						link_translation = "here"
+
+					%>
+          <ul class="list-group">
+          <li class="list-group-item">
+					({{project_translation}} [<a href="{{pathToRoot}}{{topic_info['projectURL']}}">{{link_translation}}</a>])</h4>
+          </a>
+          </li>
+          % for project in topic_info["projects"]:
+            <li class="list-group-item">
+          			<a href="{{pathToRoot}}{{lang}}/{{project['url']}}">
+          				{{project['title_en']}}
+          			</a>
+          			% if get('taMode', False) and "teachURL" in project:
+          				<br><a href="{{pathToRoot}}{{project['teachURL']}}">UTA Notes</a>
+          			% end
+            </li>
+          % end
+        </ul>
+      </div>
+    </div>
+  </div>
+	% end
+

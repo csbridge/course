@@ -1,0 +1,468 @@
+[
+    {
+        "title_en": "Karel",
+        "title_tr": "Karel",
+        "bonus": false,
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/Day1.zip",
+                "examples": [
+                    {
+                        "title_en": "Step Up",
+                        "title_tr": "Öne Çık",
+                        "url": "projects/stepUp/"
+                    },
+                    {
+                        "title_en": "Place 100",
+                        "title_tr": "100 Tane Yerleştir",
+                        "url": "projects/place100/"
+                    },
+                    {
+                        "title_en": "Beeper Line",
+                        "title_tr": "Beeper Hattı",
+                        "url": "projects/beeperLine/"
+                    },
+                    {
+                        "title_en": "Invert Beeper",
+                        "title_tr": "Ters Çevir",
+                        "url": "projects/invertBeeper/"
+                    },
+                    {
+                        "title_en": "UN Karel",
+                        "title_tr": "İnsani Yardım Karel'ı",
+                        "url": "projects/unKarel/"
+                    },
+                    {
+                        "title_en": "Banish Winter",
+                        "title_tr": "Kışa Veda",
+                        "url": "projects/banishWinter/"
+                    }
+                ],
+                "projects": [
+                    {
+                        "imageURL": "img/projects/newspaper/newspaper.jpg",
+                        "teachURL": "teach/notes/collectNewspaper.html",
+                        "title_en": "Collect Newspaper",
+                        "topic_en": "Functions",
+                        "type": "quickstart",
+                        "url": "projects/collectNewspaper.html"
+                    },
+                    {
+                        "imageURL": "img/icons/charles.jpg",
+                        "teachURL": "tas/soln/efes.html",
+                        "title_en": "Build Efes/Charles Bridge",
+                        "topic_en": "For Loops",
+                        "type": "section",
+                        "url": "projects/efes.html"
+                    },
+                    {
+                        "imageURL": "img/projects/mountain/mountain.png",
+                        "teachURL": "tas/soln/mountain.html",
+                        "title_en": "Mountain Karel",
+                        "topic_en": "While Loops",
+                        "type": "project",
+                        "url": "projects/mountain.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "Variables",
+        "visible_after": "2020080500",
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/Day2.zip",
+                "examples": [
+                    {
+                        "title_en": "E=MC²",
+                        "title_tr": "E=MC²",
+                        "url": "projects/emc2.html"
+                    },
+                    {
+                        "title_en": "Find Pi",
+                        "title_tr": "Pi'yi Bul",
+                        "url": "projects/findPi.html"
+                    },
+                    {
+                        "imageURL": "img/projects/8Ball/8ball.png",
+                        "title_en": "8 Ball",
+                        "title_tr": "8 Numaralı Top",
+                        "topic_en": "Conditionals",
+                        "topic_tr": "Conditional'lar",
+                        "url": "projects/8ball.html"
+                    }
+                ],
+                "projects": [
+                    {
+                        "imageURL": "img/projects/sandcastles/sandcastle.jpg",
+                        "teachURL": "tas/soln/sandcastles.html",
+                        "title_en": "Sandcastles",
+                        "topic_en": "Variables",
+                        "type": "quickstart",
+                        "url": "projects/sandcastles.html"
+                    },
+                    {
+                        "imageURL": "img/icons/guess.jpg",
+                        "teachURL": "tas/soln/favoriteNumber.html",
+                        "title_en": "Favorite Number",
+                        "topic_en": "Variables",
+                        "type": "project",
+                        "url": "projects/favoriteNumber.html"
+                    },
+                    {
+                        "imageURL": "img/icons/medicine.png",
+                        "teachURL": "tas/soln/medicine.png",
+                        "title_en": "Medicine Counterfeiting",
+                        "topic_en": "Concatenation",
+                        "type": "project",
+                        "url": "projects/medicine.html"
+                    },
+                    {
+                        "imageURL": "img/projects/someSum/someSum.png",
+                        "teachURL": "tas/soln/someSum.html",
+                        "title_en": "That's Some Sum!",
+                        "title_tr": "Toplama Diye Buna Derim!",
+                        "topic_en": "Variables",
+                        "type": "quickstart",
+                        "url": "projects/someSum.html"
+                    },
+                    {
+                        "imageURL": "img/icons/nim.jpg",
+                        "teachURL": "tas/soln/nimm.html",
+                        "title_en": "Game of Nimm",
+                        "topic_en": "Variables",
+                        "type": "project",
+                        "url": "projects/gameOfStones.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "Graphics",
+        "visible_after": "2020081000",
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/Day3.zip",
+                "examples": [
+                    {
+                        "title_en": "Robot Face",
+                        "title_tr": "Robot Yüzü",
+                        "url": "projects/robotFace.html"
+                    },
+                    {
+                        "title_en": "Half Green",
+                        "title_tr": "Yarısı Yeşil",
+                        "url": "projects/halfGreen.html"
+                    },
+                    {
+                        "title_en": "Average Function",
+                        "title_tr": "Ortalama Fonksiyonu",
+                        "url": "projects/average.html"
+                    },
+                    {
+                        "title_en": "Division",
+                        "title_tr": "Bölme",
+                        "url": "projects/division.html"
+                    },
+                    {
+                        "title_en": "Draw People",
+                        "title_tr": "İnsan Çiz",
+                        "url": "projects/drawPeople.html"
+                    }
+                ],
+                "projects": [
+                    {
+                        "imageURL": "img/projects/programmingIsAwesome/demo.png",
+                        "teachURL": "tas/soln/awesome.html",
+                        "title_en": "Programming is Awesome",
+                        "title_tr": "Programlamak Bir Harika",
+                        "topic_en": "Graphics",
+                        "topic_tr": "Grafik",
+                        "type": "quickstart",
+                        "url": "projects/awesome.html"
+                    },
+                    {
+                        "imageURL": "img/projects/mysterySquare/mysterySquare.png",
+                        "teachURL": "tas/soln/mysterySquare.html",
+                        "title_en": "Mystery Square",
+                        "title_tr": "Gizemli Kare",
+                        "topic_en": "Animation",
+                        "topic_tr": "Animasyon",
+                        "type": "quickstart",
+                        "url": "projects/mysterySquare.html"
+                    },
+                    {
+                        "imageURL": "img/projects/stringArt/stringArt.png",
+                        "teachURL": "tas/soln/stringArt.html",
+                        "title_en": "String Art",
+                        "title_tr": "Çizgi Sanatı",
+                        "topic_en": "For Loops",
+                        "topic_tr": "For Döngüsü",
+                        "type": "section",
+                        "url": "projects/stringArt.html"
+                    },
+                    {
+                        "imageURL": "img/projects/randomCircles/demo1.png",
+                        "teachURL": "tas/soln/randomCircles.html",
+                        "title_en": "Random Circles",
+                        "title_tr": "Tesadüfi Daireler",
+                        "topic_en": "Graphics and Randomness",
+                        "topic_tr": "Grafikler ve Rastgelelik",
+                        "type": "quickstart",
+                        "url": "projects/randomCircles.html"
+                    },
+                    {
+                        "imageURL": "img/projects/bouncingBall/demo.png",
+                        "teachURL": "tas/soln/bouncingBall.html",
+                        "title_en": "Bouncing Ball",
+                        "title_tr": "Zıp Zıp Top",
+                        "topic_en": "Animation",
+                        "topic_tr": "Animasyon",
+                        "type": "section",
+                        "url": "projects/bouncingBall.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "Methods and Advanced Java",
+        "title_tr": "Döngüsü / Animasyon",
+        "visible_after": "2020081100",
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/Day4.zip",
+                "examples": [
+                    {
+                        "title_en": "Move to Center",
+                        "title_tr": "Merkeze Git",
+                        "url": "projects/moveToCenter/"
+                    },
+                    {
+                        "title_en": "Gravity Ball",
+                        "title_tr": "Seken Top",
+                        "url": "projects/gravityBall/"
+                    }
+                ],
+                "projects": [
+                    {
+                        "imageURL": "img/icons/madMax.jpg",
+                        "teachURL": "tas/soln/madMethods.html",
+                        "title_en": "Mad Methods",
+                        "topic_en": "Params and returns",
+                        "type": "quickstart",
+                        "url": "projects/madMethods.html"
+                    },
+                    {
+                        "imageURL": "img/projects/target/target.png",
+                        "teachURL": "tas/soln/target.html",
+                        "title_en": "Target",
+                        "title_tr": "Hedef Tahtası",
+                        "topic_en": "Parameters",
+                        "topic_tr": "Parametreler",
+                        "type": "section",
+                        "url": "projects/target.html"
+                    },
+                    {
+                        "imageURL": "img/projects/illusion/illusion1.png",
+                        "teachURL": "tas/soln/illusion.html",
+                        "title_en": "Optical Illusion",
+                        "title_tr": "Optik İllüzyon",
+                        "topic_en": "For Loops",
+                        "topic_tr": "For Döngüsü",
+                        "type": "project",
+                        "url": "projects/illusion.html"
+                    },
+                    {
+                        "imageURL": "img/projects/shortfilm/sunset.png",
+                        "teachURL": "tas/soln/shortFilm.html",
+                        "title_en": "Short Film",
+                        "title_tr": "Kısa Film",
+                        "topic_en": "Animation",
+                        "topic_tr": "Animasyon",
+                        "type": "project",
+                        "url": "projects/shortFilm.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "Events",
+        "visible_after": "2020081200",
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/Day5.zip",
+                "examples": [
+                    {
+                        "title_en": "Stamp Tool",
+                        "title_tr": "Damga Makinesi",
+                        "url": "projects/stampTool/"
+                    },
+                    {
+                        "title_en": "Hole Puncher",
+                        "title_tr": "Delgeç",
+                        "url": "projects/holePuncher/"
+                    },
+                    {
+                        "title_en": "Debris Sweeper",
+                        "title_tr": "Enkazı Kaldır",
+                        "url": "projects/debrisSweeper/"
+                    },
+                    {
+                        "title_en": "Rocket Paddle",
+                        "title_tr": "Roket Atar",
+                        "url": "projects/rocketPaddle/"
+                    }
+                ],
+                "projects": [
+                    {
+                        "imageURL": "img/projects/mouseLocation/mouseLocation.png",
+                        "teachURL": "teach/notes/mouseLocation.html",
+                        "title_en": "Mouse Location",
+                        "title_tr": "Farenin Konumu",
+                        "topic_en": "Mouse",
+                        "topic_tr": "Mouse",
+                        "type": "quickstart",
+                        "url": "projects/mouseLocation.html"
+                    },
+                    {
+                        "imageURL": "img/projects/makingTracks/makingTracks.png",
+                        "teachURL": "teach/notes/makingTracks.html",
+                        "title_en": "Making Tracks",
+                        "title_tr": "İz Çıkartmaca",
+                        "topic_en": "Mouse",
+                        "topic_tr": "Mouse",
+                        "type": "section",
+                        "url": "projects/makingTracks.html"
+                    },
+                    {
+                        "imageURL": "img/projects/snow/snowflake.png",
+                        "teachURL": "teach/notes/snow.html",
+                        "title_en": "Snow",
+                        "title_tr": "Kar",
+                        "topic_en": "Lists",
+                        "topic_tr": "Lists",
+                        "type": "section",
+                        "url": "projects/snow.html"
+                    },
+                    {
+                        "imageURL": "img/projects/catchMeIfYouCan/demo1.png",
+                        "teachURL": "teach/notes/catchMeIfYouCan.html",
+                        "title_en": "Catch Me If You Can",
+                        "title_tr": "Sıkıysa Yakala",
+                        "topic_en": "Lists and Mouse",
+                        "topic_tr": "Listeler ve Fare (Mouse)",
+                        "type": "project",
+                        "url": "projects/catchMeIfYouCan.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "Breakout",
+        "title_tr": "Breakout",
+        "visible_after": "2020081300",
+        "bonus": false,
+        "sections": [
+            {
+                "title_en": "Breakout",
+                "title_tr": "Breakout",
+                "projectURL": "starter/Breakout.zip",
+                "projects": [
+                    {
+                        "imageURL": "img/projects/breakout/breakout.jpg",
+                        "teachURL": "teach/notes/breakout.html",
+                        "title_en": "Breakout",
+                        "title_tr": "Breakout",
+                        "topic_en": "Python, Graphics, Animation, Lists and Mouse",
+                        "topic_tr": "Python, Graphics, Animation, Lists and Mouse",
+                        "type": "project",
+                        "url": "projects/breakout.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "ArrayLists + HashMaps",
+        "visible_after": "2020081300",
+        "bonus": false,
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/Day7.zip",
+                "projects": [
+                    {
+                        "imageURL": "img/projects/sorted/sorted.jpg",
+                        "teachURL": "tas/soln/sortedNumbers.html",
+                        "title_en": "Sorted Numbers",
+                        "topic_en": "ArrayLists",
+                        "type": "quickstart",
+                        "url": "projects/sortedNumbers.html"
+                    },
+                    {
+                        "imageURL": "img/icons/starWars.png",
+                        "teachURL": "tas/soln/starWars.html",
+                        "title_en": "Star Wars Crawl [optional]",
+                        "topic_en": "ArrayLists",
+                        "type": "project",
+                        "url": "projects/starWars.html"
+                    },
+                    {
+                        "imageURL": "img/icons/snow.png",
+                        "teachURL": "tas/soln/snow.html",
+                        "title_en": "Snow",
+                        "topic_en": "ArrayLists",
+                        "type": "quickstart",
+                        "url": "projects/snow.html"
+                    },
+                    {
+                        "imageURL": "img/icons/mouseGame.png",
+                        "teachURL": "tas/soln/mouseGame.html",
+                        "title_en": "The Line [Optional]",
+                        "topic_en": "ArrayLists",
+                        "type": "project",
+                        "url": "projects/mouseGame.html"
+                    },
+                    {
+                        "imageURL": "img/icons/music3.jpg",
+                        "teachURL": "tas/soln/music.html",
+                        "title_en": "Waves of sound [Optional]",
+                        "topic_en": "ArrayLists",
+                        "type": "quickstart",
+                        "url": "projects/music.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title_en": "Final Project",
+        "visible_after": "2020081300",
+        "bonus": false,
+        "sections": [
+            {
+                "title_en": "",
+                "projectURL": "starter/BlankJavaProject.zip",
+                "projects": [
+                    {
+                        "imageURL": "img/icons/project.png",
+                        "title_en": "Make Your Own",
+                        "topic_en": "All",
+                        "type": "project",
+                        "url": "projects/project.html"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,1420 @@
+<!--
+	A template used for every page - contains the header, nav bar, a container div, and the footer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+<title>CS Bridge  | Home</title>
+
+<!-- Fonts -->
+<!--<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+
+<!-- Styles -->
+
+<link href="../plugins/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<!-- Java Script -->
+<script src="../plugins/jquery.min.js"></script>
+<script src="../plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<!--<script src="../karel/ace/ace.js" type="text/javascript"></script>-->
+
+<!-- Moment.js -->
+<script type="text/javascript" src="../js/moment.min.js"></script>
+<script type="text/javascript" src="../js/moment-timezone-with-data-10-year-range.min.js"></script>
+<script type="text/javascript" src="../js/time.js"></script>
+
+<!-- Date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Latex support -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+<!--
+<script src="../karel/js/html/websiteImports.js"></script>
+<script>importCss();</script>
+<script>importJs();</script>
+-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<!--<script src="sweetalert2.all.min.js"></script>-->
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+-->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+	</head>
+	<body>
+
+
+<!-- The datetime editor, for testing -->
+
+<!-- The navigation bar -->
+<nav class="navbar-inverse navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">CS Bridge</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<!-- Python dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../python/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2020">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://online.csbridge.org/"> CS Bridge 2020 online website</a></li>
+              <li class="divider">
+              <li><a href="https://docs.google.com/document/d/1BVncLFZ--q5Aie-j-BmRb52OkEv-5bO8ZNKcN7JYnQE/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../python/uta.html">UTA section leading lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Java dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../java/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2019ctu">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://ctu.csbridge.org/"> CTU-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://koc.csbridge.org/"> Koç-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://uniandes.csbridge.org/"> Uniandes-CS Bridge 2019 website</a></li>
+              <li class="divider">
+              <li><a href="https://docs.google.com/document/d/187dYuw3FITp6i4mDeZ8krp1ap4sNM9uHxjF-3SHlE5U/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="">UTA lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Logistics dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+            <li><a href="">A day in CS Bridge</a></li>
+            <li><a href="">(coming soon!) Planning summer program (coming soon!)</li>
+            <li><a href="">(coming soon!) UTA hiring/training (coming soon!)</a></li>
+            <li class="divider">
+            <li><a href="">(coming soon!) Instructor FAQ</a></li>
+            <li><a href="../logistics/uta-faq.html">UTA FAQ</a></li>
+            </ul>
+          </li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- Script to toggle between languages -->
+<script>
+	function changeToTurkish() {
+		var url = window.location.href;
+		url = url.replace("/en/", "/tr/");
+		window.location.href = url;
+	}
+	
+	function changeToEnglish() {
+		var url = window.location.href;
+		url = url.replace("/tr/", "/en/");
+		window.location.href = url;
+	}
+</script>
+
+		<div class="container">
+			
+<div class="page-header">
+	<div class="container">
+		<div>
+        	<div id="logo">
+				<img id="logoImg" src="../img/logo.png"/>
+			</div>
+			<div id="headerText" style="padding-bottom:15px;">
+				<div class="h1" style="margin-top:0px;font-size:40px;">
+					Intro to Computer Science
+				</div>
+				<div>
+					Summer 2020
+				</div>
+				<div>
+					August 4th to August 20th, online
+				</div>
+			</div>
+        </div>
+	</div>
+</div>
+	
+<br />
+
+<div>
+	<h2>The Idea of the Course</h2>
+
+	<p>The point of this three week course is to teach you the fundamentals of computer programming to the point where you can go and learn on your own. It is taught by a collaboration of instructors from Stanford University, CTU, and Koç. You will learn to program using material for Stanford's Introduction to Computer Science course.</p>
+</div>
+
+
+
+<hr/>
+
+<!-- Daily schedule / list of programs -->
+<div class="section" id="schedule">
+	<h2>Programs</h2>
+
+
+<table class="table table-striped table-sm">
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 1: Karel</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../en/starter/Day1PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/newspaper/newspaper.jpg" />
+</td>
+<td>
+	<a href="../en/projects/collectNewspaper.html">Collect Newspaper</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Functions</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/efes/charles.jpg" />
+</td>
+<td>
+	<a href="../en/projects/arches.html">Arches Karel</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 2: Karel and Control Flow</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../en/starter/Day2AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/placeSquare/placeSquare.png" />
+</td>
+<td>
+	<a href="../en/projects/placeSquare.html">Place Square</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>While Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/mountain/mountain.png" />
+</td>
+<td>
+	<a href="../en/projects/mountain.html">Mountain Karel</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>While Loops</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../en/starter/Day2PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/stripeKarel/stripeKarel.png" />
+</td>
+<td>
+	<a href="../en/projects/stripeKarel.html">Stripe Karel</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Nested Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/hospitalkarel/hospitalkarel.png" />
+</td>
+<td>
+	<a href="../en/projects/hospitalKarel.html">Hospital Karel</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Nested Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/randomPainter/randomPainter.png" />
+</td>
+<td>
+	<a href="../en/projects/randomPainter.html">Random Painter</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>If Statements</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 3: Variables</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../en/starter/Day3AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/sandcastles/sandcastle.jpg" />
+</td>
+<td>
+	<a href="../en/projects/sandcastles.html">Sandcastles</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Variables</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/runningSum/runningSum.png" />
+</td>
+<td>
+	<a href="../en/projects/runningSum.html">Run, Sum, Run!</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Variables</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../en/starter/Day3PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/areaCalculator/areaCalculator.png" />
+</td>
+<td>
+	<a href="../en/projects/areaCalculator.html">Area Calculator</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Variables</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/8Ball/8ball.png" />
+</td>
+<td>
+	<a href="../en/projects/8ball.html">8 Ball</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Conditionals</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/viralvideo/viralVideo.png" />
+</td>
+<td>
+	<a href="../en/projects/viralVideo.html">Viral Video</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Conditionals</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/khansole/khansole.png" />
+</td>
+<td>
+	<a href="../en/projects/khansole.html">Khansole Academy</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Conditionals</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 4: For loops, deconstructed</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../en/starter/Day4AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/someSum/someSum.png" />
+</td>
+<td>
+	<a href="../en/projects/someSum.html">That&#039;s Some Sum!</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Loop variables</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/carbonDating/carbondating.jpg" />
+</td>
+<td>
+	<a href="../en/projects/carbonDating.html">Carbon Dating</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Loop variables</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 5: Graphics and Functions</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../en/starter/Day5AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/programmingIsAwesome/demo.png" />
+</td>
+<td>
+	<a href="../en/projects/programmingIsAwesome.html">Programming is Awesome</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Graphics</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/randomCircles/demo1.png" />
+</td>
+<td>
+	<a href="../en/projects/randomCircles.html">Random Circles</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Graphics and Randomness</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../en/starter/Day5PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/funkyFunctions/logo.png" />
+</td>
+<td>
+	<a href="../en/projects/funkyFunctions.html">Funky Functions</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Params and Return</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/fizzbuzz/fizzbuzz.png" />
+</td>
+<td>
+	<a href="../en/projects/fizzbuzz-functions.html">FizzBuzz</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Params and Return</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/target/target.png" />
+</td>
+<td>
+	<a href="../en/projects/target.html">Target</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Parameters</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/stringArt/stringArt.png" />
+</td>
+<td>
+	<a href="../en/projects/stringArt.html">String Art</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 6: Loops and Animation</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../en/starter/Day6AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/printIndices/logo.png" />
+</td>
+<td>
+	<a href="../en/projects/printIndices.html">Print Indices</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/illusion/illusion1.png" />
+</td>
+<td>
+	<a href="../en/projects/illusion.html">Optical Illusion</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../en/starter/Day6PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/mysterySquare/mysterySquare.png" />
+</td>
+<td>
+	<a href="../en/projects/mysterySquare.html">Mystery Square</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Animation</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/bouncingBall/demo.png" />
+</td>
+<td>
+	<a href="../en/projects/bouncingBall.html">Bouncing Ball</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Animation</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/shortfilm/sunset.png" />
+</td>
+<td>
+	<a href="../en/projects/shortFilm.html">Short Film</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Animation</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 7: Lists and Mouse</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../en/starter/Day7AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/sorted/sorted.jpg" />
+</td>
+<td>
+	<a href="../en/projects/sorted.html">Sorted Numbers</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Lists</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/ascending/icon.jpg" />
+</td>
+<td>
+	<a href="../en/projects/ascending.html">Ascending Numbers</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Lists</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../en/starter/Day7PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/mouseLocation/mouseLocation.png" />
+</td>
+<td>
+	<a href="../en/projects/mouseLocation.html">Mouse Location</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+</td>
+<td>Mouse</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/makingTracks/makingTracks.png" />
+</td>
+<td>
+	<a href="../en/projects/makingTracks.html">Making Tracks</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Mouse</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/snow/snowflake.png" />
+</td>
+<td>
+	<a href="../en/projects/snow.html">Snow</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+</td>
+<td>Lists</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/catchMeIfYouCan/demo1.png" />
+</td>
+<td>
+	<a href="../en/projects/catchMeIfYouCan.html">Catch Me If You Can</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Lists and Mouse</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 8: Breakout</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Breakout Project [<a href="../en/starter/Breakout.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/breakout/breakout.jpg" />
+</td>
+<td>
+	<a href="../en/projects/breakout.html">Breakout</a>
+    <br/>
+
+    <span class="label label-success">Project</span>	
+</td>
+<td>Python, Graphics, Animation, Lists and Mouse</td>
+		      			</tr>
+		      	</tbody>
+
+
+</table>
+</div>
+
+<hr/>
+
+<!-- Course Staff -->
+<div class="section" id="staff">
+	<h2>Teachers</h2>
+
+	  	<div class="row">
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/nickt.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Nick T.</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/ondra.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Ondra</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Ayca.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Ayca</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/chris.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Chris</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/nickm.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Nick M.</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Josef.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Josef</b>
+				  		</div>
+					</div>
+		  		</div>
+	  	</div>
+	  	<div class="row">
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Yosefa.JPG" alt="profile picture">
+				  		<div class="caption">
+							<b>Yosefa</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Burcu.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Burcu</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/lisa.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Lisa</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/ceren.PNG" alt="profile picture">
+				  		<div class="caption">
+							<b>Ceren</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Ahmet.png" alt="profile picture">
+				  		<div class="caption">
+							<b>Ahmet</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Anna.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Anna</b>
+				  		</div>
+					</div>
+		  		</div>
+	  	</div>
+	  	<div class="row">
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Demet.jpeg" alt="profile picture">
+				  		<div class="caption">
+							<b>Demet</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Eddie.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Eddie</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Eliška.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Eliška</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Emilia.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Emilia</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Emirhan.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Emirhan</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Eren.jpeg" alt="profile picture">
+				  		<div class="caption">
+							<b>Eren</b>
+				  		</div>
+					</div>
+		  		</div>
+	  	</div>
+	  	<div class="row">
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Ezgi.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Ezgi</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Gaby.jpeg" alt="profile picture">
+				  		<div class="caption">
+							<b>Gaby</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Gül Sena.JPG" alt="profile picture">
+				  		<div class="caption">
+							<b>Gül Sena</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Honza.jpeg" alt="profile picture">
+				  		<div class="caption">
+							<b>Honza</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Jan.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Jan</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/jaroslav.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Jaroslav</b>
+				  		</div>
+					</div>
+		  		</div>
+	  	</div>
+	  	<div class="row">
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/jillian.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Jillian</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Julie.jpeg" alt="profile picture">
+				  		<div class="caption">
+							<b>Julie</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Melis.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Melis</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Necla.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Necla</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Okan.png" alt="profile picture">
+				  		<div class="caption">
+							<b>Okan</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Oya.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Oya</b>
+				  		</div>
+					</div>
+		  		</div>
+	  	</div>
+	  	<div class="row">
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Ozan.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Ozan</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Pinar.jpeg" alt="profile picture">
+				  		<div class="caption">
+							<b>Pinar</b>
+				  		</div>
+					</div>
+		  		</div>
+		  		<div class="col-xs-2">
+					<div class="thumbnail">
+			  			<img class="thumbnailImg" src="../img/staff/Radek.jpg" alt="profile picture">
+				  		<div class="caption">
+							<b>Radek</b>
+				  		</div>
+					</div>
+		  		</div>
+	  	</div>
+</div>
+
+<hr/>
+
+<!-- Curriculum Overview -->
+<div class="section" id="playWithKarel">
+	<h2>Curriculum</h2>
+	<img src = "../img/resources/curriculum.jpg" style="width:100%"></img>
+</div>
+
+
+<!--<div class="section" id="playWithKarel">
+	<h2>
+		Play With Karel
+	</h2>
+
+	<p>Meet Karel, The Java Robot that Stanford uses to introduce university students to programming. </p>
+
+	<p>Use Karel's commands to get her to move the beeper to the top of the ledge. Normally you will write your programs in an application called Eclipse, but to get you started we made a mini-eclipse for our website:
+	</p>
+
+
+<div style="width:100%;">
+	<div id="runButtonBar" class="buttonBar"></div> 
+       <script>importButtonBar();</script>
+</div>
+   <div id ='mainIde' class = "getStarted">
+ 
+      <div id = "mainIdeCenter" >
+      	
+         <div id = 'mainIdeEditorDiv'>
+            <script>importEditor('mainIdeEditor','mainIdeEditorDiv');</script>
+         </div>
+         <div id = 'mainIdeCanvasDiv' class = 'orange'>
+            <canvas id = 'mainIdeCanvas' class = 'red'></canvas>
+         </div>
+         
+      </div>
+
+   </div>
+
+
+   
+   
+
+<script>
+
+		
+
+  function init() {
+  	 var stepUpWorld = null;
+     var karelIde = null;
+
+     var onReadyCalled = false;
+
+     var buttonState = 'play';
+
+     document.onready = function() {
+        if (onReadyCalled) return;
+        onReadyCalled = true;
+        $("[title]").tooltip({ position: "bottom center", opacity: 0.9});
+        
+        initTabs();
+        var canvas = document.getElementById('mainIdeCanvas');
+        karelIde = KarelIde(window._editor, canvas, 'collectNewspaper');
+
+        var stepUpCanvase = document.getElementById('firstIdeCanvas');
+        stepUpWorld = KarelIde(window._editor, stepUpCanvase, '5x5');
+        
+        $('#playButton').click(function(){playClicked()});
+        $('#move').click(function(){stepUpWorld.stepMove()});
+        $('#left').click(function(){stepUpWorld.stepTurnLeft()});
+        $('#right').click(function(){stepUpWorld.stepTurnRight()});
+        $('#put').click(function(){stepUpWorld.stepPutBeeper()});
+        $('#pick').click(function(){stepUpWorld.stepPickBeeper()});
+        /*$('#worldSelector').change(
+           function() {
+              var worldName = $("#worldSelector option:selected").text();
+              karelIde.stopButton();
+              var playText = '<span class="glyphicon glyphicon-play"></span> Run Program';
+         	  $('#playButton').html(playText);
+         	  buttonState = 'play';
+	          karelIde.changeWorld(worldName);
+	        }
+        );*/
+        window.onresize();
+        
+     }
+
+     function playClicked() {
+     	if(buttonState == 'play') {
+     		karelIde.playButton();
+         	
+         	var resetText = '<span class="glyphicon glyphicon-repeat"></span> Reset Program';
+         	$('#playButton').html(resetText);
+         	buttonState = 'reset';
+         } else if (buttonState == 'reset') {
+         	karelIde.stopButton();
+         	var playText = '<span class="glyphicon glyphicon-play"></span> Run Program';
+         	$('#playButton').html(playText);
+         	buttonState = 'play';
+         }
+     	
+   }
+
+     window.onresize = function() { 
+        var parentHeight = 600;
+        var canvasWidth = 300
+        var parentWidth = $("#playWithKarel").width();
+        console.log('pw: ' + parentWidth);
+
+        var ide = document.getElementById('mainIde');
+        var editorDiv = document.getElementById('mainIdeEditorDiv');
+        var canvas = document.getElementById('mainIdeCanvasDiv');
+        var center = document.getElementById('mainIdeCenter');
+        
+        var ideHeight = parentHeight
+        ide.style.height = (ideHeight)+ 'px';
+        ide.style.width = parentWidth + 'px';
+        
+        var centerHeight = ideHeight;
+        center.style.height = centerHeight + 'px';
+        center.style.width = parentWidth + 'px';
+
+        //center.style.top = centerTop + 'px';
+
+        var availibleWidth = parentWidth ;
+        var elementSpacing = 12;
+
+        
+        var editorWidth = availibleWidth - canvasWidth - elementSpacing; 
+
+        canvas.style.width = canvasWidth + 'px';
+        canvas.style.height = canvasWidth + 'px';
+        canvas.style.left = (editorWidth + elementSpacing) + 'px';
+
+       	
+       	//editorWidth = Math.max(editorWidth, Const.MIN_EDITOR_WIDTH)
+
+        editorDiv.style.left = 0 + 'px'
+        editorDiv.style.width = editorWidth + 'px';
+
+        if (karelIde) {
+           karelIde.resizeCanvas(canvasWidth, canvasWidth);
+           stepUpWorld.resizeCanvas($("#firstIdeCanvas").width(), 200);
+        }
+        if (window._editor) {
+           window._editor.renderer.onResize();
+        }
+        ReferenceDialog.resize();
+        DeployDialog.resize();
+     }
+
+     
+  }
+  init();
+</script></div>-->
+
+					
+
+<hr>
+
+<div class="footer">
+	<p class="pull-left">
+
+		<!-- Start of content that must be translated -->
+			&#169; Stanford 2020 &#124; Created by 
+			<a href="http://stanford.edu/~cpiech">Chris</a> with help from the entire team.
+			Based on the wonderful CS106A class which was developed by many talented teachers. Special thanks to <a href="http://cs.stanford.edu/people/eroberts/">Eric Roberts</a> and <a href="http://robotics.stanford.edu/~sahami/bio.html">Mehran Sahami</a>.
+		<!-- End of content that must be translated -->
+	</p>
+</div>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35433298-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript">
+    var pubnubDemo = new PubNub({
+        subscribeKey: 'sub-c-f79c3cd0-a4b5-11e9-aaf3-de35c74afaf8'
+    });
+
+	// Subscribe to the demo_tutorial channel
+	pubnubDemo.addListener({
+	    message: function(request) {
+	    	let msg = request['message']
+	    	console.log(msg)
+	    	let swalData = msg['swal'];
+	    	console.log(swalData)
+        Swal.fire(swalData)
+	    }
+	})
+
+	pubnubDemo.subscribe({
+	    channels: ['csbridge_alert']
+	});
+</script>
+		</div>
+
+	</body>
+</html>

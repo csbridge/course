@@ -1,0 +1,180 @@
+% rebase('templates/en/template.ptl', title="Home")
+
+<!-- Header -->
+<div id="pageHeader">
+  <h1>
+    Java Course-in-a-Box
+  </h1>
+</div>
+<div>
+  Last updated August 2020
+</div>
+<hr/>
+
+<p>
+On this page you will find program writeups for each of the assignments in the CS Bridge course. This course was designed for 2 weeks in person. Students attended as a 9-6pm program</p>
+
+<h2>On this page</h2>
+<ul>
+  <li><a href="#schedule">Schedule at-a-glance</a></li>
+  <li><a href="#assignments">Assignment List</a></li>
+  <li><a href="#lecture">Lecture slides and code download</a></li>
+  <li><a href="#starter">Assignment starter code download</a></li>
+  <li><a href="#worked">Worked examples</a></li>
+</ul>
+
+<p>For more information, please use the navigation bar above to access instructor <b>lesson plans</b>, <b>cloneable course websites</b>, and more course logistics.
+Contact us at csbridge @ cs.stanford.edu to request assignment solutions.
+</p>
+
+<hr/>
+
+<div class="section">
+  <h2 id="schedule">Schedule</h2> 
+<%
+     days = [
+          ("[Week 1] Tuesday", "Karel and Control Flow", ""),
+          ("Wednesday", "Variables", ""),
+          ("Thursday", "Graphics and Animation", ""),
+          ("Friday", "Methods and Nested Loops", ""),
+          ("[Week 2] Monday", "Events and Breakout", ""),
+          ("Tuesday", "More Breakout", "CS Topic lectures here"),
+          ("Wednesday", "ArrayLists and HashMaps", ""),
+          ("Thursday", "Creative Project", ""),
+          ("Friday", "Creative Project", "Morning only (Closing ceremony)")
+     ]
+%>
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Day</th>
+      <th scope="col"></th>
+      <th scope="col">Topic</th>
+      <th scope="col">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    % for i, (day, topic, notes) in enumerate(days):
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{day}}</td>
+        <td>{{topic}}</td>
+        <td>{{notes}}</td>
+      <tr/>
+    % end
+  </tbody>
+</table>
+</div> <!-- end schedule -->
+
+<!-- Daily schedule / list of programs -->
+<div class="section">
+	<h2 id="assignments">Assignment List</h2>
+  <!--
+	<div class="alert alert-info">
+	  Here are instructions for how to work on the programs below during labs: <a href="{{pathToRoot}}en/handouts/eclipse.html">click here</a>.
+	</div>
+  -->
+	%include("templates/programs/projectsTable.ptl", lang="java")
+</div>
+
+<!-- Daily schedule / list of programs -->
+<div class="section" id="schedule">
+	<h2>Bonus Programs</h2>
+ %include("templates/programs/bonusProjectsTable.ptl", lang="java")
+</div>
+
+<hr/>
+
+<div class="section">
+  <h2 id="lecture">Lecture slides and code</h2>
+  <p>
+  Right-click -> "Save As..." to download all lecture slides and lecture code.
+  </p>
+	<%
+		# Read the data from the JSON file
+		import json
+		with open("templates/java/lectures.json", "r", encoding="utf8") as lectures_file:
+	  		data = json.load(lectures_file)
+	%>
+  <ul>
+	% for i, lecture_info in enumerate(data):
+    <li>{{lecture_info["title_en"]}} - 
+		% for content_type in ["slides", "code"]:
+			% if (content_type + "URL") in lecture_info:
+		    [<a href="{{pathToRoot}}java/{{lecture_info[content_type + 'URL']}}">{{content_type.capitalize()}}</a>]
+      % end
+    % end
+    </li>
+  % end
+  </ul>
+</div>
+
+<hr/>
+
+<div class="section">
+  <h2 id="starter">Assignment starter code</h2>
+  <p>
+  Right-click -> "Save As..." to download all starter code.
+  </p>
+  <%
+  	# Read the data from the JSON file
+  	import json
+  	with open("templates/java/programs.json", "r", encoding="utf8") as programs_file:
+    		data = json.load(programs_file)
+  %>
+  <ul>
+  % for i in range(len(data)):
+		% day_info = data[i]
+    <li>Day {{i+1}}: {{day_info["title_en"]}}</li>
+    <ul>
+    % for section in day_info["sections"]:
+    <li><a href="{{pathToRoot}}{{section['projectURL']}}">{{section["title_en"] + " Project"}}</a></li>
+    % end
+    </ul>
+  % end
+  </ul>
+</div>
+
+<div class="section">
+  <h2 id="worked">Worked examples</h2>
+  <p>These are examples posted on the website that students can read or review during their work time.</p>
+	<%
+		# Read the data from the JSON file
+		import json
+		with open("templates/java/programs.json", "r", encoding="utf8") as programs_file:
+	  		data = json.load(programs_file)
+    content_type = "examples"
+	%>
+  <ul>
+  % for i, day_info in enumerate(data):
+		<% 	
+			# Skip this day if it doesn't have any content
+			has_content = False
+			for section in day_info["sections"]:
+				if content_type in section:
+					has_content = True
+					break
+				end
+			end
+			if not has_content:
+				continue
+			end 
+		%>
+    <li>Day {{i+1}}: {{day_info["title_en"]}}</li>
+    <ul>
+		% for section in day_info["sections"]:
+			% if content_type in section:
+        % for program in section[content_type]:
+        <li>
+        <a href="{{pathToRoot}}java/{{program['url']}}">{{program["title_en"]}}</a>
+        </li>
+        % end
+      % end
+    % end
+    </ul>
+  % end
+  </ul>
+
+
+<hr/>
+

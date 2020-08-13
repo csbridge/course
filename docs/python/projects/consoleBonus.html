@@ -1,0 +1,303 @@
+<!--
+	A template used for every page - contains the header, nav bar, a container div, and the footer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+<title>CS Bridge  | Console Bonus</title>
+
+<!-- Fonts -->
+<!--<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+
+<!-- Styles -->
+
+<link href="../../plugins/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+
+<!-- Java Script -->
+<script src="../../plugins/jquery.min.js"></script>
+<script src="../../plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<!--<script src="../../karel/ace/ace.js" type="text/javascript"></script>-->
+
+<!-- Moment.js -->
+<script type="text/javascript" src="../../js/moment.min.js"></script>
+<script type="text/javascript" src="../../js/moment-timezone-with-data-10-year-range.min.js"></script>
+<script type="text/javascript" src="../../js/time.js"></script>
+
+<!-- Date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Latex support -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+<!--
+<script src="../karel/js/html/websiteImports.js"></script>
+<script>importCss();</script>
+<script>importJs();</script>
+-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<!--<script src="sweetalert2.all.min.js"></script>-->
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+-->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+	</head>
+	<body>
+
+
+<!-- The datetime editor, for testing -->
+
+<!-- The navigation bar -->
+<nav class="navbar-inverse navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">CS Bridge</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<!-- Python dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../../python/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2020">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://online.csbridge.org/"> CS Bridge 2020 online website</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://docs.google.com/document/d/1BVncLFZ--q5Aie-j-BmRb52OkEv-5bO8ZNKcN7JYnQE/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../../python/uta.html">UTA section leading lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Java dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../../java/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2019ctu">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://ctu.csbridge.org/"> CTU-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://koc.csbridge.org/"> Koç-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://uniandes.csbridge.org/"> Uniandes-CS Bridge 2019 website</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://docs.google.com/document/d/187dYuw3FITp6i4mDeZ8krp1ap4sNM9uHxjF-3SHlE5U/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../../java/uta.html">UTA lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Logistics dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+            <li><a target="_blank" href="https://docs.google.com/document/d/1z-uYgwpd3G-gYCeGAPw0Hx6lOShgCKwsh6HZttoflAk/edit?usp=sharing">A day in CS Bridge</a></li>
+            <li><a href="">(coming soon!) Planning summer program (coming soon!)</li>
+            <li><a href="">(coming soon!) UTA hiring/training (coming soon!)</a></li>
+            <li class="divider">
+            <li><a href="">(coming soon!) Instructor FAQ</a></li>
+            <li><a href="../../logistics/uta-faq.html">UTA FAQ</a></li>
+            </ul>
+          </li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- Script to toggle between languages -->
+<script>
+	function changeToTurkish() {
+		var url = window.location.href;
+		url = url.replace("/en/", "/tr/");
+		window.location.href = url;
+	}
+	
+	function changeToEnglish() {
+		var url = window.location.href;
+		url = url.replace("/tr/", "/en/");
+		window.location.href = url;
+	}
+</script>
+
+		<div class="container">
+			<!--
+Template for rendering a project page, for use with Markdown specs.  Expects
+the following properties passed in:
+
+title - problem title
+credit - problem credit (optional)
+solution - problem solution python filename (optional)
+base - the HTML body for this template
+filePath - the total path to the markdown file being rendered in this template
+-->
+
+
+<!-- Header -->
+<div id="pageHeader">
+	<h1>
+		Console Bonus
+	</h1>
+
+</div>
+<hr/>
+
+<!-- Problem description -->
+<div class="row">
+	<div class="col-xs-12">
+		<p>Handout: <a href="https://codeinplace2020.github.io/pythonreader/en/intro/">Python Reader</a><br/>
+Handout: <a href="../..//en/resources/quick-python.html">Python Reference</a><br/></p>
+<p>This is a collection of bonus programs! They are meant to be challenging.  They are not listed in order of difficulty, so choose whichever programs sound interesting!</p>
+<h1 id="conversion">Conversion</h1>
+<p>credit: Mehran Sahami, Keith Schwarz, Eric Roberts, Marty Stepp, and others.<br />
+file: <code>conversion.py</code></p>
+<p>America uses a confusing measurement system where units of length are measured in inches, feet, yards and miles. There are twelve inches in a foot and three feet in a yard. However, when doing scientific measurements, it is important to use centimeters, meters, and kilometers since these units of measurement are used worldwide. Write a program that converts from centimeters to inches given that there are 2.54 centimeters in 1 inch. Below is some sample output from the program.  The program should stop when the user enters -1 for the number of centimeters.</p>
+<pre><code>This program can convert centimeters to inches
+Enter cm: 2.54
+2.54 centimeters equals 1.0 inches
+Enter cm: 68
+68.0 centimeters equals 26.771653543307085 inches
+Enter cm: 100
+100.0 centimeters equals 39.37007874015748 inches
+Enter cm: -1
+</code></pre>
+
+<p>You can now write a program to convert any kind of units that you want!</p>
+<h1 id="fizzbuzz">FizzBuzz</h1>
+<p>credit: Mehran Sahami, Keith Schwarz, Eric Roberts, Marty Stepp, and others.<br />
+file: <code>fizzbuzz.py</code></p>
+<p>Fizzbuzz is a classic coding problem.</p>
+<p>In the game Fizz Buzz, players take turns counting up from one. If a player’s turn lands on a number that’s divisible by 3, they should say “Fizz” instead of the number, and if it lands on a number that’s divisible by 5, they should say “Buzz” instead of the number. If the number is both a multiple of 3 and of 5, they should say "Fizzbuzz" instead of the number. A spectator sport, it is not. What it is, however, is an interesting problem in control flow.</p>
+<p>Write a program that counts up to and including 100, fizzing and buzzing the correct numbers along the way.  Here's part of a sample run of the program:</p>
+<pre><code>1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+...
+</code></pre>
+
+<h2 id="checking-multiples">Checking Multiples</h2>
+<p>In order to solve the hailstone problem, we are going to need as way to determine if an integer is a multiple of another integer. In addition to the regular operators that you know and love (like +, -, *, and /) programming languages provide a remainder operator: %.  </p>
+<pre><code>a % b
+</code></pre>
+
+<p>returns the value remaining when you divide a by b. For example, 10 % 3 is 1 because when you divide 10 by 3 you get 3 with 1 left over.  And when you divide any number by 2, the remainder is 0 if the number is even and 1 if the number is odd.  How can we use this to check if one number is a multiple of another?</p>
+<h1 id="piglet">Piglet</h1>
+<p>credit: Mehran Sahami, Keith Schwarz, Eric Roberts, Marty Stepp, and others.<br />
+file: <code>piglet.py</code></p>
+<p>Write a console program for a 1-player dice game called "Piglet", based on the game "Pig". The player's goal is to get as many points as possible without rolling a 1. Each turn, the player rolls the die; if they roll a 1, the game ends and the player gets a score of 0. If the player rolls any number besides a 1, that number is added to their score. The player then chooses whether to roll again or end the game with their current score. Two sample game outputs are shown below.</p>
+<pre><code>Welcome to Piglet!
+You rolled a 4!
+Roll again? yes
+You rolled a 5!
+Roll again? yes
+You rolled a 5!
+Roll again? yes
+You rolled a 4!
+Roll again? yes
+You rolled a 3!
+Roll again? no
+You got 21 points.
+</code></pre>
+
+<pre><code>Welcome to Piglet!
+You rolled a 5!
+Roll again? yes
+You rolled a 2!
+Roll again? yes
+You rolled a 4!
+Roll again? yes
+You rolled a 1!
+You got 0 points.
+</code></pre>
+	</div>
+</div>
+
+<!-- Solution (if included) -->
+
+					
+
+<hr>
+
+<div class="footer">
+	<p class="pull-left">
+
+		<!-- Start of content that must be translated -->
+			&#169; Stanford 2020 &#124; Created by 
+			<a href="http://stanford.edu/~cpiech">Chris</a> with help from the entire team.
+			Based on the wonderful CS106A class which was developed by many talented teachers. Special thanks to <a href="http://cs.stanford.edu/people/eroberts/">Eric Roberts</a> and <a href="http://robotics.stanford.edu/~sahami/bio.html">Mehran Sahami</a>.
+		<!-- End of content that must be translated -->
+	</p>
+</div>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35433298-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript">
+    var pubnubDemo = new PubNub({
+        subscribeKey: 'sub-c-f79c3cd0-a4b5-11e9-aaf3-de35c74afaf8'
+    });
+
+	// Subscribe to the demo_tutorial channel
+	pubnubDemo.addListener({
+	    message: function(request) {
+	    	let msg = request['message']
+	    	console.log(msg)
+	    	let swalData = msg['swal'];
+	    	console.log(swalData)
+        Swal.fire(swalData)
+	    }
+	})
+
+	pubnubDemo.subscribe({
+	    channels: ['csbridge_alert']
+	});
+</script>
+		</div>
+
+	</body>
+</html>

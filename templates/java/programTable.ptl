@@ -1,0 +1,517 @@
+<%
+  # Set these values to change when they appear on the website
+  # Times are formatted as YYYYMMDDHH
+
+  # day 6 + 7
+  setdefault('finalProject', '2019071713')
+  setdefault('arrayListSection', '2019071712')
+  setdefault('arrayListStart', '2019071709')
+
+  # day 5
+  setdefault('breakout', '2019071513')
+  setdefault('eventsSection', '2019071512')
+  setdefault('eventsStart', '2019071508')
+
+  # day 4
+  setdefault('methodsSection', '2019071212')
+  setdefault('methodsStart', '2019071208')
+
+  # day 3
+  setdefault('graphicsSection', '2019071112')
+  setdefault('graphicsStart', '2019071108')
+
+  # day 2
+  setdefault('varsSection', '2019071012')
+  setdefault('varsStart', '2019071008')
+
+  # day 1
+  setdefault('karelSection', '2019070913')
+  setdefault('karelStart', '2019070800')
+%>
+
+<!-- Final Project -->
+<table class="table table-striped">
+
+		<!-- Day 7 -->
+		<thead
+		% if not get('taMode', False):
+			class="visible-after" data-visible-after="{{finalProject}}"
+		% end
+
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Days 7-8: Final Project (<a href="{{pathToRoot}}starter/BlankJavaProject.zip">Eclipse Project Here</a>)</h4>
+			</tr>
+		</thead>
+		<tbody
+		% if not get('taMode', False):
+			class="visible-after" data-visible-after="{{finalProject}}"
+		% end
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/project.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/project.html">Make Your Own</a></td>
+				<td>All</td>
+			</tr>
+		</tbody>
+
+		<!-- Day 7 -->
+		<thead
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{arrayListStart}}"
+			% end
+
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Day 7: ArrayLists + HashMaps (<a href="{{pathToRoot}}starter/Day7.zip">Eclipse Project Here</a>)</h4>
+			</tr>
+		</thead>
+		<tbody
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{arrayListStart}}"
+			% end
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/numbers.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/sortedNumbers.html">Sorted Numbers</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/sortedNumbers.html">UTA Notes</a>
+					% end
+				</td>
+				<td>ArrayLists</td>
+			</tr>
+
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/projects/starWars/demo.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/starWars.html">Star Wars Crawl [optional]</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/starWars.html">UTA Notes</a>
+					% end
+				</td>
+				<td>ArrayLists</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{arrayListSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/snow.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/snow.html">Snow</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/snow.html">UTA Notes</a>
+					% end
+				</td>
+				<td>ArrayLists</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{arrayListSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/mouseGame.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/mouseGame.html">[Optional] The Line</a></td>
+				<td>ArrayLists</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{arrayListSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/music3.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/music.html">[Optional] Waves of Sound</a></td>
+				<td>ArrayLists</td>
+			</tr>
+		</tbody>
+
+
+<!-- Days 5-6: Breakout -->
+		<thead
+		% if not get('taMode', False):
+			class="visible-after" data-visible-after="{{breakout}}"
+		% end
+
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Days 5-6: Breakout (<a href="{{pathToRoot}}starter/Breakout.zip">Eclipse Project Here</a>)</h4>
+			</tr>
+		</thead>
+		<tbody
+		  % if not get('taMode', False):
+				class="visible-after" data-visible-after="{{breakout}}"
+			% end
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/breakout.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/breakout.html">Breakout!</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/breakout.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Interactors</td>
+			</tr>
+		</tbody>
+
+		<thead
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{eventsStart}}"
+			% end
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Day 5: Events (<a href="{{pathToRoot}}starter/Day5.zip">Eclipse Project Here</a>)</h4></b></th>
+			</tr>
+		</thead>
+		<tbody
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{eventsStart}}"
+			% end
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/makingTracks.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/makingTracks.html">Making Tracks (Lab)</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/makingTracks.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Events</td>
+			</tr>
+
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/mouseLocation.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/mouseLocation.html">Mouse Location (Lab)</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/mouseLocation.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Events</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{eventsSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/catchMeIfYouCan.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/catchMeIfYouCan.html">Catch Me If You Can (Section)</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/catchMeIfYouCan.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Instance Variables</td>
+			</tr>
+		</tbody>
+		<thead
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{methodsStart}}"
+			% end
+
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Day 4: Methods and Advanced Java (<a href="{{pathToRoot}}starter/Day4.zip">Eclipse Project Here</a>)</h4></b></th>
+			</tr>
+		</thead>
+		<tbody
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{methodsStart}}"
+			% end
+
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/madMax.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/madMethods.html">Mad Methods</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/madMethods.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Params and Returns</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{methodsSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/target.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/target.html">Target</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/target.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Parameters</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{methodsSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/illusion.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/illusion.html">Optical Illusion</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/illusion.html">UTA Notes</a>
+					% end
+				</td>
+				<td>For Loops</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{methodsSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/sunset.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/sunset.html">Short Film</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/sunset.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Params and Returns</td>
+			</tr>
+		</tbody>
+		<thead
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{graphicsStart}}"
+			% end
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Day 3: Graphics (<a href="{{pathToRoot}}starter/Day3.zip">Eclipse Project Here</a>)</h4></b></th>
+			</tr>
+		</thead>
+		<tbody
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{graphicsStart}}"
+			% end
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/awesome.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/awesome.html">Programing is Awesome</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/awesome.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Graphics</td>
+			</tr>
+
+			<tr 
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{graphicsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/mysterySquare.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/mysterySquare.html">Mystery Square</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/mysterySquare.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Randomness</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{graphicsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/stringArt.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/stringArt.html">String Art</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/stringArt.html">UTA Notes</a>
+					% end
+				</td>
+				<td>For Loops</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{graphicsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/randomCircles.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/randomCircles.html">Random Circles</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/randomCircles.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Randomness</td>
+			</tr>
+
+			<tr 
+			% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{graphicsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/bouncing.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/bouncingBall.html">Bouncing Ball</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/bouncingBall.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Animation</td>
+			</tr>
+		</tbody>
+
+		<thead
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{varsStart}}"
+			% end
+		>
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Day 2: Variables (<a href="{{pathToRoot}}starter/Day2.zip">Eclipse Project Here</a>)</h4></b></th>
+			</tr>
+		</thead>
+		<tbody
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{varsStart}}"
+			% end
+		>
+			<tr>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/sandcastle.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/sandcastles.html">Sandcastles</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/sandcastles.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Variables</td>
+			</tr>
+
+			<tr
+				% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{varsSection}}"
+			% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/guess.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/favoriteNumber.html">Favorite Number</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/favoriteNumber.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Variables</td>
+			</tr>
+
+			<tr
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{varsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/medicine.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/medicine.html">Medicine Counterfeiting</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/medicine.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Concatenation</td>
+			</tr>
+
+			<tr 
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{varsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/someSum.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/someSum.html">That's Some Sum</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/someSum.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Variables</td>
+			</tr>
+
+			<tr 
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{varsSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/nim.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/gameOfStones.html">Game of Nimm</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/gameOfStones.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Variables</td>
+			</tr>
+		</tbody>
+		<thead
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{karelStart}}"
+			% end
+		>
+
+			<tr>
+				<th colspan = "6"><b>
+					<br/>
+						<h4>Day 1: Karel (<a href="{{pathToRoot}}starter/Day1.zip">Eclipse Project Here</a>)</h4></b></th>
+			</tr>
+		</thead>
+		<tbody
+			% if not get('taMode', False):
+				class="visible-after" data-visible-after="{{karelStart}}"
+			% end
+		>
+			<tr>
+				<td><a href="{{pathToRoot}}java/projects/collectNewspaper.html"><img class="projectImg" src="{{pathToRoot}}img/icons/newspaper.jpg"></img></a></td>
+				<td><a href="{{pathToRoot}}java/projects/collectNewspaper.html">Collect Newspaper</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/collectNewspaper.html">UTA Notes</a>
+					% end
+				</td>
+				<td>Methods</td>
+			</tr>
+
+			<tr
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{karelSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/charles.jpg"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/efes.html">Build Charles Bridge</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/efes.html">UTA Notes</a>
+					% end
+				</td>
+				<td>For Loops</td>
+			</tr>
+
+			<tr 
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{karelSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/mountain.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/mountain.html">Mountain Karel</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/mountain.html">UTA Notes</a>
+					% end
+				</td>
+				<td>While Loops</td>
+			</tr>
+
+			<tr 
+				% if not get('taMode', False):
+					class="visible-after" data-visible-after="{{karelSection}}"
+				% end
+			>
+				<td><img class="projectImg" src="{{pathToRoot}}img/icons/randomPainter2.png"></img></td>
+				<td><a href="{{pathToRoot}}java/projects/randomPainter.html">Random Painter</a>
+					% if get('taMode', False):
+						<br><a href="{{pathToRoot}}java/tas/soln/randomPainter.html">UTA Notes</a>
+					% end
+				</td>
+				<td>If Statements</td>
+			</tr>
+		</tbody>
+</table>

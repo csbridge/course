@@ -1,0 +1,85 @@
+[
+	{
+		"title_en": "Day 1 Evening: Karel",
+		"title_tr": "Karel",
+		"slidesURL": "slides/Lecture1.pptx",
+		"codeURL": "starter/lectures/Lecture1.zip",
+		"visible_after": "2020080409"
+	},
+	{
+		"title_en": "Day 2 Morning: Karel and Control Flow",
+		"title_tr": "Karel ve Kontrol Akışı",
+		"slidesURL": "slides/Lecture2.pptx",
+		"visible_after": "2020080500"
+	},
+	{
+		"title_en": "Day 2 Evening: Karel and Control Flow 2",
+		"title_tr": "Karel ve Kontrol Akışı 2",
+		"slidesURL": "slides/Lecture3.pptx",
+		"codeURL": "starter/lectures/Lecture3.zip",
+		"visible_after": "2020080509"
+	},
+	{
+		"title_en": "Day 3 Morning: Variables",
+		"title_tr": "Değişkenler",
+		"slidesURL": "slides/Lecture4_Variables.pptx",
+		"codeURL": "starter/lectures/Lecture4.zip",
+		"visible_after": "2020080600"
+	},
+	{
+		"title_en": "Day 3 Evening: Control Flow Revisited",
+		"title_tr": "Kontrol Akışına Geri Dönüş",
+		"slidesURL": "slides/5-ControlFlowRevisited.pptx",
+		"codeURL": "starter/lectures/Lecture5.zip",
+		"visible_after": "2020080609"
+	},
+	{
+		"title_en": "Day 4 Morning: For Loops, Deconstructed",
+		"title_tr": "For döngüsü ve analizi",
+		"slidesURL": "slides/Lecture6.pptx",
+		"codeURL": "starter/lectures/Lecture6.zip",
+		"visible_after": "2020080700"
+	},
+	{
+		"title_en": "Day 5 Morning: Graphics",
+		"title_tr": "Grafik",
+		"slidesURL": "slides/Lecture7_Graphics.pptx",
+		"codeURL": "starter/lectures/Lecture7.zip",
+		"visible_after": "2020081000"
+	},
+	{
+		"title_en": "Day 5 Evening: Functions",
+		"title_tr": "Fonksiyonlar",
+		"slidesURL": "slides/Lecture8-Functions.pptx",
+		"codeURL": "starter/lectures/Lecture8.zip",
+		"visible_after": "2020081009"
+	},
+	{
+		"title_en": "Day 6 Morning: Nested Loops",
+		"title_tr": "Nested Loops",
+		"slidesURL": "slides/Lecture9.pptx",
+		"codeURL": "starter/lectures/Lecture9.zip",
+		"visible_after": "2020081100"
+	},
+	{
+		"title_en": "Day 6 Evening: Animation",
+		"title_tr": "Animation",
+		"slidesURL": "slides/10-Animation.pptx",
+		"codeURL": "starter/lectures/Lecture10.zip",
+		"visible_after": "2020081109"
+	},
+	{
+		"title_en": "Day 7 Morning: Lists",
+		"title_tr": "Lists",
+		"slidesURL": "slides/Lecture11.pptx",
+		"codeURL": "starter/lectures/Lecture11.zip",
+		"visible_after": "2020081200"
+	},
+	{
+		"title_en": "Day 7 Evening: The Mouse",
+		"title_tr": "The Mouse",
+		"slidesURL": "slides/12-Mouse.pptx",
+		"codeURL": "starter/lectures/Lecture12.zip",
+		"visible_after": "2020081209"
+	}
+]

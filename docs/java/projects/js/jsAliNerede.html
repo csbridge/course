@@ -1,0 +1,262 @@
+<!--
+	A template used for every page - contains the header, nav bar, a container div, and the footer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+<title>CS Bridge  | Ali Nerede?</title>
+
+<!-- Fonts -->
+<!--<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+
+<!-- Styles -->
+
+<link href="../../../plugins/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../style.css">
+
+<!-- Java Script -->
+<script src="../../../plugins/jquery.min.js"></script>
+<script src="../../../plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<!--<script src="../../../karel/ace/ace.js" type="text/javascript"></script>-->
+
+<!-- Moment.js -->
+<script type="text/javascript" src="../../../js/moment.min.js"></script>
+<script type="text/javascript" src="../../../js/moment-timezone-with-data-10-year-range.min.js"></script>
+<script type="text/javascript" src="../../../js/time.js"></script>
+
+<!-- Date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Latex support -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+<!--
+<script src="../karel/js/html/websiteImports.js"></script>
+<script>importCss();</script>
+<script>importJs();</script>
+-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<!--<script src="sweetalert2.all.min.js"></script>-->
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+-->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+	</head>
+	<body>
+
+
+<!-- The datetime editor, for testing -->
+
+<!-- The navigation bar -->
+<nav class="navbar-inverse navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../../index.html">CS Bridge</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<!-- Python dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../../../python/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2020">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://online.csbridge.org/"> CS Bridge 2020 online website</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://docs.google.com/document/d/1BVncLFZ--q5Aie-j-BmRb52OkEv-5bO8ZNKcN7JYnQE/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../../../python/uta.html">UTA section leading lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Java dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../../../java/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2019ctu">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://ctu.csbridge.org/"> CTU-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://koc.csbridge.org/"> Koç-CS Bridge 2019 website</a></li>
+              <li><a target="_blank" href="https://uniandes.csbridge.org/"> Uniandes-CS Bridge 2019 website</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://docs.google.com/document/d/187dYuw3FITp6i4mDeZ8krp1ap4sNM9uHxjF-3SHlE5U/edit?usp=sharing">Instructor lesson plans</a></li>
+              <li><a href="../../../java/uta.html">UTA lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Logistics dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+            <li><a target="_blank" href="https://docs.google.com/document/d/1z-uYgwpd3G-gYCeGAPw0Hx6lOShgCKwsh6HZttoflAk/edit?usp=sharing">A day in CS Bridge</a></li>
+            <li><a href="">(coming soon!) Planning summer program (coming soon!)</li>
+            <li><a href="">(coming soon!) UTA hiring/training (coming soon!)</a></li>
+            <li class="divider">
+            <li><a href="">(coming soon!) Instructor FAQ</a></li>
+            <li><a href="../../../logistics/uta-faq.html">UTA FAQ</a></li>
+            </ul>
+          </li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- Script to toggle between languages -->
+<script>
+	function changeToTurkish() {
+		var url = window.location.href;
+		url = url.replace("/en/", "/tr/");
+		window.location.href = url;
+	}
+	
+	function changeToEnglish() {
+		var url = window.location.href;
+		url = url.replace("/tr/", "/en/");
+		window.location.href = url;
+	}
+</script>
+
+		<div class="container">
+			
+	<!-- Main Content -->
+	<div class="container">
+
+		<!-- Header -->
+		<div id="pageHeader">
+			<h1>
+				Ali Nerede?
+			</h1>
+			<p>
+		Created by Brian Lam, Amy Nguyen, and Bryce Cronkite-Ratcliff		
+			</p>
+
+		</div>
+		<hr/>
+
+<hr>
+<p>&quot;Ali Nerede?&quot;yi hat&#305;rl&#305;yor musun? In the United Kingdom, where this children's book series originated, Ali is known as Wally; in the United States, he is our beloved Waldo.</p>
+<div style="text-align: center"><img style="height: 320px" src="http://i.imgur.com/TNHKoSk.jpg"><img style="height: 320px" src="http://i.imgur.com/IIQLOy2.jpg"> <img style="height: 320px" src="http://i.imgur.com/O8a17M5.jpg"></div>
+<p>The goal is to find the elusive Ali in a crowd of people. Here's an example of a puzzle:</p>
+<div style="text-align: center">
+    <img style="width: 820px" src="http://i.imgur.com/KK1NZo7.jpg">
+  <p style="text-align: center"><i>(Hint: He's near a striped green towel!)</i></p>
+</div>
+<p>Today, we're going to let people play Ali Nerede? on the web! When a user clicks on the image, you will let them know whether they successfully found Ali.</p>
+<h1>Getting Started</h1>
+<p>Open <b>ali.js</b> with Notepad++, which can be found inside the "jsday2" folder on your desktop. Open <b>index.html</b> in Google Chrome. It should show a picture of a game of Ali Nerede.</p>
+
+<h3>Milestone 1</h3>
+<p>Use the Pythagorean Theorem to write a method that returns the distance between two points. You will use this to determine whether the user found Ali by clicking near him.</p>
+<p>In ali.js, you are given a method that takes in the x and y values for two points. In the Pythagorean Theorem equation, you will use the two x values as one side of the triangle and the two y values as another side of the triangle. Return the distance between the two points, which is also the hypotenuse of this triangle!</p>
+
+<h3>Milestone 2</h3>
+<p>Fill in the mouseClicked method, which takes in information about a mouse click and tells the user whether they successfully clicked on Ali. Use the getDistance method you just wrote to figure this out.</p>
+
+<h3>Milestone 3</h3>
+<p>Add a listener for the page's image element for the mouseClicked method.
+
+<h3>Extra Features</h3>
+<ul>
+  <li>Can you let the user know when they are close to Ali, but haven't found him yet?</li>
+  <li>How would you randomly choose the Ali game to display? There are more games in the images folder!</li>
+  <li>Your JavaScript code assumes that the Waldo game will be placed at the top left corner of the window. How would you change the code to check where on the screen the image is?</li>
+</ul>
+
+<h1>Useful Functions</h1>
+<p>To get the square root of a value:</p>
+<pre><code>Math.sqrt(value);</code></pre>
+
+<p>To get the x and y coordinates from a JavaScript mouse event:</p>
+<pre><code>function mouseClicked(e) {
+  var mouseX = e.pageX;
+  var mouseY = e.pageY;
+}</code></pre>
+
+<p>To add a mouse click listener in JavaScript:</p>
+<pre><code>var <i>elem</i> = document.getElementById(<i>id</i>);
+<i>elem</i>.onclick = <i>functionName</i>;</code></pre>
+
+<p>To display a message to the user:</p>
+<pre><code>alert("Merhaba!");</code></pre>
+
+
+					
+
+<hr>
+
+<div class="footer">
+	<p class="pull-left">
+
+		<!-- Start of content that must be translated -->
+			&#169; Stanford 2020 &#124; Created by 
+			<a href="http://stanford.edu/~cpiech">Chris</a> with help from the entire team.
+			Based on the wonderful CS106A class which was developed by many talented teachers. Special thanks to <a href="http://cs.stanford.edu/people/eroberts/">Eric Roberts</a> and <a href="http://robotics.stanford.edu/~sahami/bio.html">Mehran Sahami</a>.
+		<!-- End of content that must be translated -->
+	</p>
+</div>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35433298-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript">
+    var pubnubDemo = new PubNub({
+        subscribeKey: 'sub-c-f79c3cd0-a4b5-11e9-aaf3-de35c74afaf8'
+    });
+
+	// Subscribe to the demo_tutorial channel
+	pubnubDemo.addListener({
+	    message: function(request) {
+	    	let msg = request['message']
+	    	console.log(msg)
+	    	let swalData = msg['swal'];
+	    	console.log(swalData)
+        Swal.fire(swalData)
+	    }
+	})
+
+	pubnubDemo.subscribe({
+	    channels: ['csbridge_alert']
+	});
+</script>
+		</div>
+
+	</body>
+</html>

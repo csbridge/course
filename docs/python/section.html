@@ -1,0 +1,1193 @@
+<!--
+	A template used for every page - contains the header, nav bar, a container div, and the footer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+<title>CS Bridge  | Home</title>
+
+<!-- Fonts -->
+<!--<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,600italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+
+<!-- Styles -->
+
+<link href="../plugins/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<!-- Java Script -->
+<script src="../plugins/jquery.min.js"></script>
+<script src="../plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<!--<script src="../karel/ace/ace.js" type="text/javascript"></script>-->
+
+<!-- Moment.js -->
+<script type="text/javascript" src="../js/moment.min.js"></script>
+<script type="text/javascript" src="../js/moment-timezone-with-data-10-year-range.min.js"></script>
+<script type="text/javascript" src="../js/time.js"></script>
+
+<!-- Date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Latex support -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+<!--
+<script src="../karel/js/html/websiteImports.js"></script>
+<script>importCss();</script>
+<script>importJs();</script>
+-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<!--<script src="sweetalert2.all.min.js"></script>-->
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+-->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+	</head>
+	<body>
+
+
+<!-- The datetime editor, for testing -->
+
+<!-- The navigation bar -->
+<nav class="navbar-inverse navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">CS Bridge</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<!-- Python dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../python/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2020">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://online.csbridge.org/"> CS Bridge 2020 online website</a></li>
+              <li class="divider">
+              <li><a href="">Instructor lesson plans</a></li>
+              <li><a href="">UTA lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Java dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java Course-in-a-Box<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+              <li><a href="../python/index.html">Curriculum Overview</a></li>
+              <li class="divider">
+              <li><a target="_blank" href="https://github.com/csbridge/csbridge2020">Cloneable course website (GitHub)</a></li>
+              <li><a target="_blank" href="https://online.csbridge.org/"> CS Bridge 2020 online website</a></li>
+              <li class="divider">
+              <li><a href="">Instructor lesson plans</a></li>
+              <li><a href="">UTA lesson plans</a></li>
+            </ul>
+          </li>
+
+					<!-- Logistics dropdown -->
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+            <li><a href="">A day in CS Bridge</a></li>
+            <li><a href="">Planning summer program (coming soon!)</li>
+            <li><a href="">UTA hiring/training (coming soon!)</a></li>
+            <li class="divider">
+            <li><a href="">Instructor FAQ</a></li>
+            <li><a href="">UTA FAQ</a></li>
+            </ul>
+          </li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- Script to toggle between languages -->
+<script>
+	function changeToTurkish() {
+		var url = window.location.href;
+		url = url.replace("/en/", "/tr/");
+		window.location.href = url;
+	}
+	
+	function changeToEnglish() {
+		var url = window.location.href;
+		url = url.replace("/tr/", "/en/");
+		window.location.href = url;
+	}
+</script>
+
+		<div class="container">
+			
+<!-- Header -->
+<div id="pageHeader">
+  <h1>
+    Python UTA Lesson Plans
+  </h1>
+</div>
+<div>
+  Last updated August 2020
+</div>
+<hr/>
+
+<p>
+On this page you will find lesson plans for Undergraduate Teaching Assistants to teach daily discussion sections and run office hour or lab help during student project time.
+</p>
+
+<hr/>
+
+<div class="row">
+  <div class="col-xs-12">
+  	<h2>Projects</h2>
+
+
+<table class="table table-striped table-sm">
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 1: Karel</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../python/starter/Day1PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/newspaper/newspaper.jpg" />
+</td>
+<td>
+	<a href="../en/projects/collectNewspaper.html">Collect Newspaper</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/collectNewspaper.html">SL Notes</a>
+</td>
+<td>Functions</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/efes/charles.jpg" />
+</td>
+<td>
+	<a href="../en/projects/arches.html">Arches Karel</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/arches.html">SL Notes</a>
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 2: Karel and Control Flow</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../python/starter/Day2AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/placeSquare/placeSquare.png" />
+</td>
+<td>
+	<a href="../en/projects/placeSquare.html">Place Square</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/placeSquare.html">SL Notes</a>
+</td>
+<td>While Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/mountain/mountain.png" />
+</td>
+<td>
+	<a href="../en/projects/mountain.html">Mountain Karel</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/mountain.html">SL Notes</a>
+</td>
+<td>While Loops</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../python/starter/Day2PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/stripeKarel/stripeKarel.png" />
+</td>
+<td>
+	<a href="../en/projects/stripeKarel.html">Stripe Karel</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/stripeKarel.html">SL Notes</a>
+</td>
+<td>Nested Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/hospitalkarel/hospitalkarel.png" />
+</td>
+<td>
+	<a href="../en/projects/hospitalKarel.html">Hospital Karel</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/hospitalKarel.html">SL Notes</a>
+</td>
+<td>Nested Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/randomPainter/randomPainter.png" />
+</td>
+<td>
+	<a href="../en/projects/randomPainter.html">Random Painter</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/randomPainter.html">SL Notes</a>
+</td>
+<td>If Statements</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 3: Variables</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../python/starter/Day3AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/sandcastles/sandcastle.jpg" />
+</td>
+<td>
+	<a href="../en/projects/sandcastles.html">Sandcastles</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/sandcastles.html">SL Notes</a>
+</td>
+<td>Variables</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/runningSum/runningSum.png" />
+</td>
+<td>
+	<a href="../en/projects/runningSum.html">Run, Sum, Run!</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/runningSum.html">SL Notes</a>
+</td>
+<td>Variables</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../python/starter/Day3PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/areaCalculator/areaCalculator.png" />
+</td>
+<td>
+	<a href="../en/projects/areaCalculator.html">Area Calculator</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/areaCalculator.html">SL Notes</a>
+</td>
+<td>Variables</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/8Ball/8ball.png" />
+</td>
+<td>
+	<a href="../en/projects/8ball.html">8 Ball</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/8ball.html">SL Notes</a>
+</td>
+<td>Conditionals</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/viralvideo/viralVideo.png" />
+</td>
+<td>
+	<a href="../en/projects/viralVideo.html">Viral Video</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/viralVideo.html">SL Notes</a>
+</td>
+<td>Conditionals</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/khansole/khansole.png" />
+</td>
+<td>
+	<a href="../en/projects/khansole.html">Khansole Academy</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/khansole.html">SL Notes</a>
+</td>
+<td>Conditionals</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 4: For loops, deconstructed</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../python/starter/Day4AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/someSum/someSum.png" />
+</td>
+<td>
+	<a href="../en/projects/someSum.html">That&#039;s Some Sum!</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/someSum.html">SL Notes</a>
+</td>
+<td>Loop variables</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/carbonDating/carbondating.jpg" />
+</td>
+<td>
+	<a href="../en/projects/carbonDating.html">Carbon Dating</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/carbonDating.html">SL Notes</a>
+</td>
+<td>Loop variables</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 5: Graphics and Functions</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../python/starter/Day5AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/programmingIsAwesome/demo.png" />
+</td>
+<td>
+	<a href="../en/projects/programmingIsAwesome.html">Programming is Awesome</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/awesome.html">SL Notes</a>
+</td>
+<td>Graphics</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/randomCircles/demo1.png" />
+</td>
+<td>
+	<a href="../en/projects/randomCircles.html">Random Circles</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/randomCircles.html">SL Notes</a>
+</td>
+<td>Graphics and Randomness</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../python/starter/Day5PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/funkyFunctions/logo.png" />
+</td>
+<td>
+	<a href="../en/projects/funkyFunctions.html">Funky Functions</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/funkyFunctions.html">SL Notes</a>
+</td>
+<td>Params and Return</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/fizzbuzz/fizzbuzz.png" />
+</td>
+<td>
+	<a href="../en/projects/fizzbuzz-functions.html">FizzBuzz</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/fizzbuzz-functions.html">SL Notes</a>
+</td>
+<td>Params and Return</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/target/target.png" />
+</td>
+<td>
+	<a href="../en/projects/target.html">Target</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/target.html">SL Notes</a>
+</td>
+<td>Parameters</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/stringArt/stringArt.png" />
+</td>
+<td>
+	<a href="../en/projects/stringArt.html">String Art</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/stringArt.html">SL Notes</a>
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 6: Loops and Animation</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../python/starter/Day6AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/printIndices/logo.png" />
+</td>
+<td>
+	<a href="../en/projects/printIndices.html">Print Indices</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/printIndices.html">SL Notes</a>
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/illusion/illusion1.png" />
+</td>
+<td>
+	<a href="../en/projects/illusion.html">Optical Illusion</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/illusion.html">SL Notes</a>
+</td>
+<td>For Loops</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../python/starter/Day6PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/mysterySquare/mysterySquare.png" />
+</td>
+<td>
+	<a href="../en/projects/mysterySquare.html">Mystery Square</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/mysterySquare.html">SL Notes</a>
+</td>
+<td>Animation</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/bouncingBall/demo.png" />
+</td>
+<td>
+	<a href="../en/projects/bouncingBall.html">Bouncing Ball</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/bouncingBall.html">SL Notes</a>
+</td>
+<td>Animation</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/shortfilm/sunset.png" />
+</td>
+<td>
+	<a href="../en/projects/shortFilm.html">Short Film</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/shortFilm.html">SL Notes</a>
+</td>
+<td>Animation</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 7: Lists and Mouse</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Morning Project [<a href="../python/starter/Day7AM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/sorted/sorted.jpg" />
+</td>
+<td>
+	<a href="../en/projects/sorted.html">Sorted Numbers</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/sorted.html">SL Notes</a>
+</td>
+<td>Lists</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/ascending/icon.jpg" />
+</td>
+<td>
+	<a href="../en/projects/ascending.html">Ascending Numbers</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/ascending.html">SL Notes</a>
+</td>
+<td>Lists</td>
+		      			</tr>
+		      	</tbody>
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Evening Project [<a href="../python/starter/Day7PM.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/mouseLocation/mouseLocation.png" />
+</td>
+<td>
+	<a href="../en/projects/mouseLocation.html">Mouse Location</a>
+    <br/>
+
+    <span class="label label-default">Quickstart</span>	
+    	<br><a href="../teach/notes/mouseLocation.html">SL Notes</a>
+</td>
+<td>Mouse</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/makingTracks/makingTracks.png" />
+</td>
+<td>
+	<a href="../en/projects/makingTracks.html">Making Tracks</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/makingTracks.html">SL Notes</a>
+</td>
+<td>Mouse</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/snow/snowflake.png" />
+</td>
+<td>
+	<a href="../en/projects/snow.html">Snow</a>
+    <br/>
+
+    <span class="label label-primary">Section</span>	
+    	<br><a href="../teach/notes/snow.html">SL Notes</a>
+</td>
+<td>Lists</td>
+		      			</tr>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/catchMeIfYouCan/demo1.png" />
+</td>
+<td>
+	<a href="../en/projects/catchMeIfYouCan.html">Catch Me If You Can</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/catchMeIfYouCan.html">SL Notes</a>
+</td>
+<td>Lists and Mouse</td>
+		      			</tr>
+		      	</tbody>
+
+
+		<!-- The head of the table should show the day's topic title -->
+		<thead>
+			<tr>
+				<th colspan = "6">
+					<br/>
+					<b>
+						<h4>Day 8: Breakout</h4>
+					</b>
+				</th>
+			</tr>
+		</thead>
+
+				<tr 
+						class="info"
+				>
+					<!-- Display the name of this part of the day and the link for its starter code -->
+	      			<td colspan = "6">
+	      				<center>
+	      					<h4>Breakout Project [<a href="../python/starter/Breakout.zip">here</a>]</h4>
+	      				</center>
+	      			</td>
+	      		</tr>
+
+	      		<!-- Display the projects for this part of the day -->
+	      		<tbody
+	      		>
+		      			<tr>
+
+<td>
+	<img class="projectImg" src="../img/projects/breakout/breakout.jpg" />
+</td>
+<td>
+	<a href="../en/projects/breakout.html">Breakout</a>
+    <br/>
+
+    <span class="label ">Project</span>	
+    	<br><a href="../teach/notes/breakout.html">SL Notes</a>
+</td>
+<td>Python, Graphics, Animation, Lists and Mouse</td>
+		      			</tr>
+		      	</tbody>
+
+
+</table>
+  </div>
+  <div class="col-xs-12">
+  	<h2>Bonus Projects</h2>
+
+
+
+		<!-- The head of the table should show the topic title and starter code link -->
+    <div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="collapseListGroupHeading0">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup0" aria-expanded="false" aria-controls="collapseListGroup0">
+					<b>Karel</b>
+      </div>
+      <div id="collapseListGroup0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading0">
+          <ul class="list-group">
+          <li class="list-group-item">
+					(Project [<a href="../starter/BonusKarel.zip">here</a>])</h4>
+          </a>
+          </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/midpointKarel.html">
+          				Midpoint
+          			</a>
+          				<br><a href="../teach/notes/midpointKarel.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/checkerBoard.html">
+          				Checkerboard
+          			</a>
+          				<br><a href="../teach/notes/checkerBoard.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/squarePainter.html">
+          				Square Painter
+          			</a>
+          				<br><a href="../teach/notes/squarePainter.html">SL Notes</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+		<!-- The head of the table should show the topic title and starter code link -->
+    <div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
+					<b>Variables</b>
+      </div>
+      <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+          <ul class="list-group">
+          <li class="list-group-item">
+					(Project [<a href="../starter/BonusVariables.zip">here</a>])</h4>
+          </a>
+          </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/consoleBonus.html">
+          				Console Bonus
+          			</a>
+          				<br><a href="../teach/notes/consoleBonus.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/loopingFun.html">
+          				Looping Fun
+          			</a>
+          				<br><a href="../teach/notes/loopingFun.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/hailstone.html">
+          				Hailstone
+          			</a>
+          				<br><a href="../teach/notes/hailstone.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/nimm.html">
+          				Ancient Game of Nimm
+          			</a>
+          				<br><a href="../teach/notes/nimm.html">SL Notes</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+		<!-- The head of the table should show the topic title and starter code link -->
+    <div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="false" aria-controls="collapseListGroup2">
+					<b>Graphics, Parameters and Return</b>
+      </div>
+      <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+          <ul class="list-group">
+          <li class="list-group-item">
+					(Project [<a href="../starter/BonusGraphics.zip">here</a>])</h4>
+          </a>
+          </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/bouncingBalls.html">
+          				Bouncing Balls
+          			</a>
+          				<br><a href="../teach/notes/bouncingBalls.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/creativeGraphics.html">
+          				Creative Graphics
+          			</a>
+          				<br><a href="../teach/notes/creativeGraphics.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/creativeStringArt.html">
+          				Creative String Art
+          			</a>
+          				<br><a href="../teach/notes/creativeStringArt.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/drawTrees.html">
+          				Draw Trees
+          			</a>
+          				<br><a href="../teach/notes/drawTrees.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/moreFunctions.html">
+          				More Functions
+          			</a>
+          				<br><a href="../teach/notes/moreFunctions.html">SL Notes</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+		<!-- The head of the table should show the topic title and starter code link -->
+    <div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup3" aria-expanded="false" aria-controls="collapseListGroup3">
+					<b>Loops and Animation</b>
+      </div>
+      <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading3">
+          <ul class="list-group">
+          <li class="list-group-item">
+					(Project [<a href="../starter/BonusLoopsAnimation.zip">here</a>])</h4>
+          </a>
+          </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/numberGrid.html">
+          				Number Grid
+          			</a>
+          				<br><a href="../teach/notes/numberGrid.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/countdown.html">
+          				Countdown
+          			</a>
+          				<br><a href="../teach/notes/countdown.html">SL Notes</a>
+            </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/borderBox.html">
+          				Border Box
+          			</a>
+          				<br><a href="../teach/notes/borderBox.html">SL Notes</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+		<!-- The head of the table should show the topic title and starter code link -->
+    <div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="collapseListGroupHeading4">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup4" aria-expanded="false" aria-controls="collapseListGroup4">
+					<b>Lists and Mouse</b>
+      </div>
+      <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading4">
+          <ul class="list-group">
+          <li class="list-group-item">
+					(Project [<a href="../starter/BonusListsMouse.zip">here</a>])</h4>
+          </a>
+          </li>
+            <li class="list-group-item">
+          			<a href="../en/projects/lineGame.html">
+          				Line Game
+          			</a>
+          				<br><a href="../teach/notes/lineGame.html">SL Notes</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+					
+
+<hr>
+
+<div class="footer">
+	<p class="pull-left">
+
+		<!-- Start of content that must be translated -->
+			&#169; Stanford 2020 &#124; Created by 
+			<a href="http://stanford.edu/~cpiech">Chris</a> with help from the entire team.
+			Based on the wonderful CS106A class which was developed by many talented teachers. Special thanks to <a href="http://cs.stanford.edu/people/eroberts/">Eric Roberts</a> and <a href="http://robotics.stanford.edu/~sahami/bio.html">Mehran Sahami</a>.
+		<!-- End of content that must be translated -->
+	</p>
+</div>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35433298-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript">
+    var pubnubDemo = new PubNub({
+        subscribeKey: 'sub-c-f79c3cd0-a4b5-11e9-aaf3-de35c74afaf8'
+    });
+
+	// Subscribe to the demo_tutorial channel
+	pubnubDemo.addListener({
+	    message: function(request) {
+	    	let msg = request['message']
+	    	console.log(msg)
+	    	let swalData = msg['swal'];
+	    	console.log(swalData)
+        Swal.fire(swalData)
+	    }
+	})
+
+	pubnubDemo.subscribe({
+	    channels: ['csbridge_alert']
+	});
+</script>
+		</div>
+
+	</body>
+</html>
